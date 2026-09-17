@@ -2,7 +2,7 @@ import pandas as pd
 
 # Load the full dataset
 print("Loading data... this may take a minute for a 195MB file")
-df = pd.read_csv("data/archive/retail_sales.csv")
+df = pd.read_csv("data/multi_product_sample.csv")
 
 # --- INSPECTION ---
 print("\nShape (rows, columns):", df.shape)

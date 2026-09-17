@@ -226,8 +226,11 @@ st.caption("Explainable demand forecasting & inventory recommendations — DATA 
 with st.sidebar:
     st.header("⚙️ Controls")
 
-    data_path = st.text_input("Dataset path", value="data/archive/retail_sales.csv",
-                               help="Path to your CSV, e.g. data/archive/retail_sales.csv")
+    data_path = st.text_input(
+    "Dataset path",
+    value="data/multi_product_sample.csv",
+    help="Path to your CSV, e.g. data/multi_product_sample.csv"
+)
 
     @st.cache_data(show_spinner=False)
     def _cached_load(path):
